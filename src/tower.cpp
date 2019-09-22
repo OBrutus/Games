@@ -19,7 +19,7 @@ public:
     disk = new int[totalDisk];
     for(int i=0;i<totalDisk;i++){
       disk[i]=cnt;
-      cout<<disk[i]<<"\t";
+      //cout<<disk[i]<<"\t";
     }
 
     //the largest disk is in totalDisk-cnt index
@@ -81,7 +81,7 @@ public:
       cout<<"null";
     else{
       for(int i=0;i<cnt-1;i++)
-	cout<<disk[i]<<"\t";
+	      cout<<disk[i]<<"\t";
       cout<<disk[cnt-1]<<"*";
     }
   }
@@ -101,7 +101,7 @@ int main()
     i++;
   }while(n<3);
   tower *a = new tower [n];
-  cout<<"Tower 1 is set as source ";
+  cout<<"\nTower 1 is set as source ";
   a[0].setTower(1);
   cout<<"Tower "<<n<<" is set as dest.\n\nLets Begin the game";
   for(i=0;i<n;i++){

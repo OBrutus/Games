@@ -2,6 +2,7 @@
 echo "compiling..."
 g++ ./src/2048.cpp -o 2048
 g++ ./src/tower.cpp -o tower
+g++ ./src/21-sticks.c -o 21-sticks
 
 if [ $? -ne "0" ]
 then
